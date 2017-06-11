@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片相关标签</title>
+</head>
+<body>
+<img src="img.jpg" alt="图像边框"/><hr/><br/>
+<!--定义图片的长、宽、高-->
+<img src="img.jpg" width="300" height="120" alt="图像边框"/><hr/><br/>
+<!--定义图片，使用指定映射-->
+<img src="img.jpg" width="300" height="120" border="0" usemap="img.jpg" alt="图像边框" /><hr/><br/>
+<!--定义图片映射-->
+<map name="test" id="test">
+    <!--为该图片映射定义两个区域-->
+    <area shape="circle" coords="57,55,25" href="http://www,baidu.com" alt="百度"/>
+    <area shape="poly" coords="188,28,185,50,200,74,224,72,246,51" href="http://www.weibo.com" alt="微博"/>
+</map>
+</body>
+</html>
