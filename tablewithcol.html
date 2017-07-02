@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:border-collapse="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>tableWithCol</title>
+</head>
+<body>
+<!--設置表格背景色為黑色,單元格之間的間距為1px
+    通過設置背景色為黑色可以實現邊框效果
+-->
+<table style="background-color: black;
+                border-collapse:separate;border-spacing:1px;">
+    <caption><b>Crazy Java Book</b></caption>
+    <!--定義所有列的背景色都是白色-->
+    <colgroup style="background-color: white;">
+        <!--設置第一列寬為160px-->
+        <col style="width: 160px"/>
+        <!--定義橫跨兩列,設置這兩列各寬100px-->
+        <col span="2" style="width: 100px"/>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>書 名</th>
+        <th>作 者</th>
+        <th>價 格</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="3" style="text-align: right">現總計:2本書</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>Crazy Java Handouts</td>
+        <td>Gang Li</td>
+        <td>109</td>
+    </tr>
+    <tr>
+        <td>Lightweight Java EE enterprise application of the actual combat</td>
+        <td>Gang Li</td>
+        <td>89</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
