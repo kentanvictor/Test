@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签指定式选择器和后代选择器</title>
+    <style type="text/css">
+        /*下面的是后代选择器
+        只要是div标签的后代,就肯定会被选中
+        */
+        div p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <p class="two">有父元素的p</p>
+</div>
+<p class="two">
+    没有父元素的p
+</p>
+</body>
+</html>
